@@ -54,6 +54,11 @@ img {
 /* Gallery section */
 .gallery {
   display: grid;
-  max-width: 500%;
-  min-width: 300%;
+}
+
+.gallery-item > .gallery-image {
+  display: grid;
+  justify-self: start;
+  width: 309px;
+  height: 309px;
 }
