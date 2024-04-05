@@ -59,8 +59,14 @@ img {
 .gallery {
   display: grid;
   border: 1px solid red;
-  grid-template-rows: 3;
-  grid-template-columns: 4;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.gallery-item {
+  display: flex;
+  width: 300px;
+  height: 300px;
 }
 
 /* Loader wheel */
