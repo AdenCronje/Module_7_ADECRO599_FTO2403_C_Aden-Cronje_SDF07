@@ -46,6 +46,7 @@ img {
   height: 17%;
   padding-top: 10px;
   cursor: pointer;
+  gap: 3px;
 }
 
 .profile-stats {
