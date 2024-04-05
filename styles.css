@@ -31,32 +31,42 @@ img {
 }
 
 .profile {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 109px 109px 109px;
 }
 
 .profile-image {
-  border-radius: 50%;
-  border-color: aquamarine;
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  border: 1px solid red;
 }
 
 .top-bar {
-  display: flex;
   border: 1px solid red;
-  margin-left: 10%;
-  height: 17%;
-  padding-top: 10px;
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 1;
   cursor: pointer;
-  gap: 3px;
+  gap: 4px;
+  padding-top: 50px;
 }
 
 .profile-stats {
-  display: flex;
   border: 1px solid red;
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-row-end: 2;
+  padding-top: 50px;
 }
 
 .profile-bio {
-  display: flex;
   border: 1px solid red;
+  grid-column-start: 2;
+  grid-row-start: 3;
+  grid-row-end: 3;
+  padding-top: 50px;
 }
 
 /* Gallery section */
@@ -77,9 +87,9 @@ img {
 }
 
 .gallery-item:hover,
-.gallery-item-info {
-  display: flex;
-  opacity: 0.8;
+.gallery-item-info:hover {
+  opacity: 0.1;
+  cursor: pointer;
 }
 
 /* Loader wheel */
