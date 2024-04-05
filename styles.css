@@ -51,26 +51,29 @@ img {
 }
 
 /* Gallery section */
-.gallery {
+
+/* .gallery {
   display: flex;
   flex-direction: column;
   border: 1px solid red;
-}
-
-/* .container {
-  display: grid;
-  grid-row: 309px 309px 309px;
 } */
 
+.container {
+  display: grid;
+  grid-template-rows: 3;
+  grid-template-columns: 4;
+  border: 1px solid red;
+}
+
 .gallery-item > .gallery-image {
-  display: flex;
+  display: grid;
   width: 309px;
   height: 309px;
   border: 1px solid red;
 }
 
 .gallery-item {
-  display: flex;
+  display: grid;
   border: 1px solid red;
 }
 
