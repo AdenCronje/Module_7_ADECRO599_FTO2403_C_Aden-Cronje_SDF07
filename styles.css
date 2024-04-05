@@ -36,7 +36,7 @@ img {
 
 .profile-image {
   border-radius: 50%;
-  overflow: hidden;
+  border-color: aquamarine;
 }
 
 .top-bar {
@@ -59,14 +59,9 @@ img {
 }
 
 /* Gallery section */
-
-.img-container {
-  border: 1px solid red;
-}
-
 .gallery {
   display: grid;
-  border: 1px solid red;
+
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
@@ -88,23 +83,35 @@ img {
 
 /* Loader wheel */
 
-/* HTML: <div class="loader"></div> */
-/* .loader {
+.loader {
   width: 50px;
   padding: 8px;
   aspect-ratio: 1;
   border-radius: 50%;
   background: #25b09b;
-  --_m: 
-    conic-gradient(#0000 10%,#000),
-    linear-gradient(#000 0 0) content-box;
+  --_m: conic-gradient(#0000 10%, #000), linear-gradient(#000 0 0) content-box;
   -webkit-mask: var(--_m);
-          mask: var(--_m);
+  mask: var(--_m);
   -webkit-mask-composite: source-out;
-          mask-composite: subtract;
+  mask-composite: subtract;
   animation: l3 1s infinite linear;
+  justify-content: center;
 }
-@keyframes l3 {to{transform: rotate(1turn)}} */
+@keyframes l3 {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Media query */
+@media (max-width: 500px) {
+  .gallery {
+    display: grid;
+  }
+  .profile {
+    display: flex;
+  }
+}
 
 /* Past ideas */
 /* .gallery-item > .gallery-image {
