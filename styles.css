@@ -52,7 +52,8 @@ img {
 
 /* Gallery section */
 .gallery {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   border: 1px solid red;
 }
 
@@ -61,15 +62,15 @@ img {
   grid-row: 309px 309px 309px;
 } */
 
-/* .gallery {
-  display: grid;
-  grid-row: 309px 309px 309px;
-} */
-
 .gallery-item > .gallery-image {
   display: flex;
   width: 309px;
   height: 309px;
+  border: 1px solid red;
+}
+
+.gallery-item {
+  display: flex;
   border: 1px solid red;
 }
 
